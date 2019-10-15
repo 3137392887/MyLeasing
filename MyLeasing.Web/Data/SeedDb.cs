@@ -48,7 +48,7 @@ namespace MyLeasing.Web.Data
                     IsActive = true,
                     Lessee = lessee,
                     Owner = owner,
-                    Price = 800000M, // se pone la M al final de las catidades modedas para que el sistema lo tome con decimales 
+                    Price = 800000M, // se pone la M al final de las cantidades modedas para que el sistema lo tome con decimales 
                     Property = property,
                     Remarks = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec iaculis ex. Nullam gravida nunc eleifend, placerat tellus a," +
                     " eleifend metus. Phasellus id suscipit magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam volutpat ultrices ex," +
