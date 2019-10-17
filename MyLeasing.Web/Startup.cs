@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MyLeasing.Web.Data;
 using MyLeasing.Web.Data.Entities;
+using MyLeasing.Web.Helper;
 using MyLeasing.Web.Helpers;
 
 namespace MyLeasing.Web
@@ -54,6 +55,10 @@ namespace MyLeasing.Web
             services.AddTransient<SeedDb>(); // inyecta una vez
                                             //  services.AddSingleton<>(); inyecta el objeto y lo deja en memoria, no recomendado para metodos muy pesados por que ocuparia mucha memoria.
             services.AddScoped<IUserHelper, UserHelper>();// inyecta creando nuevas instancias 
+
+            services.AddScoped<ICombosHelper, CombosHelper>();
+            services.AddScoped<IConverterHelper, ConverterHelper>();
+
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
